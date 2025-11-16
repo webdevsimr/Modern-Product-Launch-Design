@@ -1,0 +1,45 @@
+.footer {
+  padding: 40px 0px;
+}
+
+.links {
+  display: flex;
+  gap: 27px;
+  padding: 10px 0px 90px 0px;
+}
+
+.links h6 {
+  font-weight:500;
+}
+
+.copyright {
+  padding-top: 50px;
+  position: relative;
+}
+
+.skeltonImg {
+  max-height: 70px;
+  max-width: 30px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.copyright_text {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 40px;
+}
+
+.copyright_text_left {
+  display: inline-flex;
+  gap: 16px;
+}
+
+
+@media (max-width: 480px) {
+
+.links{
+    flex-direction: column;
+}
+
+}

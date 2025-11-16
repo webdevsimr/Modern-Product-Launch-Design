@@ -1,0 +1,33 @@
+.ConnectWithUs {
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.container {
+  padding: 120px 0px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.desc {
+  margin: 40px 0px;
+}
+
+.learnMorebtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #485c11;
+  color: white;
+  width: 100%;
+  gap: 2px;
+}
+
+.learnMorebtn:hover {
+  background-color: #364709;
+}
+
+.arrow {
+  height: 8px;
+  vertical-align: middle;
+}

@@ -1,42 +1,219 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "DMSans", sans-serif;
+}
+
+:root {
+  --btn-lgreen: #dfecc6;
+  --btn-dark: #485c11;
+  --text-gray: #6f6f6f;
+}
+
+body {
+  background: #ffffff;
+  color: black;
+}
+
+@font-face {
+  font-family: DMSans;
+  src: url("../assets//fonts//DM_Sans/static/DMSans-Thin.ttf")
+    format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: DMSans;
+  src: url("../assets//fonts//DM_Sans/static/DMSans-ExtraLight.ttf")
+    format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: DMSans;
+  src: url("../assets//fonts//DM_Sans/static/DMSans-Light.ttf")
+    format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: DMSans;
+  src: url("../assets//fonts//DM_Sans/static/DMSans-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: DMSans;
+  src: url("../assets//fonts//DM_Sans/static/DMSans-Medium.ttf")
+    format("truetype");
+  font-weight: 500;
+  /* font-style: normal; */
+}
+@font-face {
+  font-family: DMSans;
+  src: url("../assets//fonts//DM_Sans/static/DMSans-SemiBold.ttf")
+    format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: DMSans;
+  src: url("../assets//fonts//DM_Sans/static/DMSans-Bold.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  line-height: 60px;
+}
+@font-face {
+  font-family: DMSans;
+  src: url("../assets//fonts//DM_Sans/static/DMSans-ExtraBold.ttf")
+    format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: DMSans;
+  src: url("../assets//fonts//DM_Sans/static/DMSans-Black.ttf")
+    format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  /* font-display: swap; */
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.outerSpace {
+  padding: 0 40px;
+}
+
+.outerline {
+  border-top: 1px solid gray;
+  opacity: 0.2;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  padding: 14px 22px;
+  border-radius: 24px;
+  color: black;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: var(--btn-lgreen);
+}
+
+h1 {
+  font-size: 72px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 16px;
+  color: var(--text-gray);
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@media (max-width: 768px) {
+  .outerSpace {
+    padding: 0 18px;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  h3 {
+    font-size: 36px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  h6 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  h6 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 12px;
   }
 }

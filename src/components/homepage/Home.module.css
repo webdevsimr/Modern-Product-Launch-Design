@@ -82,9 +82,9 @@
     margin: 100px 0px 72px 0px;
   }
 
-  .logo {
-    /* max-width: 130px; */
-  }
+  /* .logo {
+    max-width: 130px;
+  } */
 }
 
 @media (max-width: 480px) {

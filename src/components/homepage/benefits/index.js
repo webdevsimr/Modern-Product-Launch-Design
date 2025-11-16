@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Benefits.module.css";
+import styles from "./benefits.module.css";
 import Image from "next/image";
 import cableImg from "@/assets/images/icons/cable.svg";
 import earthImg from "@/assets/images/icons/earth.svg";
